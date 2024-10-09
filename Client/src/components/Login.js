@@ -19,7 +19,7 @@ export default function Login() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const url = '/api/auth/login'
+    const url = 'https://note-hub-production-backend.vercel.app/api/auth/login'
     const response = await fetch(url,{
       method: "POST",
       credentials:"include",
