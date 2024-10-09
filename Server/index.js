@@ -17,7 +17,7 @@ const corsOptions = {
 };
 
 // Apply CORS middleware
-app.use(cors(corsOptions));
+app.use(cors());
 app.use(express.json());
 
 // Available Routes
