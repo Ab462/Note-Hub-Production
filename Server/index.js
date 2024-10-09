@@ -12,7 +12,7 @@ const port = 8000;
 
 // middlewares
 app.use(cors({
-  origin:"*",
+  origin:"https://note-hub-production-frontend.vercel.app",
   credentials:true
 }));
 app.use(express.json());
