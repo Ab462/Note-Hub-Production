@@ -10,11 +10,14 @@ const app = express();
 const port = 8000;
 
 
-// middlewares
-app.use(cors({
-  origin:"https://note-hub-production-frontend.vercel.app",
-  credentials:true
-}));
+const corsOptions = {
+    origin: 'https://note-hub-production-frontend.vercel.app', // Your frontend URL
+    methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allowed methods
+    credentials: true, // If you want to allow cookies or authentication headers
+};
+
+// Apply CORS middleware
+app.use(cors(corsOptions));
 app.use(express.json());
 
 // Available Routes
