@@ -19,7 +19,7 @@ export default function Root() {
     }, 2000);
   }
   const getName = () => {
-    const url = '/api/auth/getuser'
+    const url = 'https://note-hub-production-backend.vercel.app/api/auth/getuser'
     const Token = localStorage.getItem('Token');
     fetch(url, {
       method: "POST",
