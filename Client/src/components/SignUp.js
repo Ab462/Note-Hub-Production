@@ -17,7 +17,7 @@ export default function SignUp() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const { name, email, password } = credentials;
-    const url = '/api/auth/Signup'
+    const url = 'https://note-hub-production-backend.vercel.app/api/auth/Signup'
     const response = await fetch(url, {
       method: "POST",
       credentials:"include",
