@@ -11,9 +11,9 @@ const port = process.env.PORT || 8000;
 
 // Define CORS options
 const corsOptions = {
-    origin: 'https://note-hub-production-frontend.vercel.app', // Your frontend URL
-    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'], // Allowed methods
-    credentials: true, // Allow credentials (cookies, authorization headers)
+    origin: 'https://note-hub-production-frontend.vercel.app',
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+    credentials: true,
 };
 
 // Apply CORS middleware globally
