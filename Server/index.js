@@ -20,8 +20,8 @@ app.use(cors(corsOptions));
 app.use(express.json());
 
 // Available Routes
-app.use("/api/auth", auth);
-app.use("/api/notes", notes);
+app.use("/api/auth", cors(corsOptions), auth);
+app.use("/api/notes", cors(corsOptions), notes);
 
 // Test route
 app.get("/", (req, res) => {
